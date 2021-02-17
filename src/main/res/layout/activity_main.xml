@@ -9,9 +9,12 @@
 
     <Button
         android:id="@+id/toast"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Toast"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +32,10 @@
 
     <Button
         android:id="@+id/increment"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
         android:text="Increment"
         app:layout_constraintBottom_toBottomOf="parent"

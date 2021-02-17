@@ -37,14 +37,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //incrémenter la valeur du compteur puis mettre à jour le text
                 counter++;
-                textViewCount.setText(""+counter);
-
-                // Pour afficher un toast
-                Toast.makeText(MainActivity.this, "Click", Toast.LENGTH_SHORT).show();
+                textViewCount.setText(String.valueOf(counter));
             }
         });
 
+        // Show toast
+        buttonToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                // Pour afficher un toast
+                Toast.makeText(MainActivity.this, "Total click : " + counter, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
